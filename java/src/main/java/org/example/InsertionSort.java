@@ -10,7 +10,7 @@ public class InsertionSort {
 
     private void insert(int i, Comparable[] a) {
         for (int j=i; j>=1; j--){
-            if(a[j]<a[j-1]){
+            if(a[j].compareTo(a[j-1])<0){
                 swap(a,j,j-1);
             }else{
                 break;
